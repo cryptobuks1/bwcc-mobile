@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".activities.InformationActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/mp_sm"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mp_half_md"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT US"
+                    android:textSize="@dimen/font_xlg"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In case of any queries please contact:"
+                    android:textSize="@dimen/font_lg"
+                    android:textColor="@color/colorText"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_address"/>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/url_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:padding="4dp"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/address_bwcc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/font_lg" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_email"/>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/email_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:padding="4dp"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/email_bwcc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/font_lg" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_phone"/>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/layout_number"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/mp_half_sm"-->
+<!--                        android:layout_marginBottom="@dimen/mp_half_sm"-->
+<!--                        android:orientation="vertical">-->
+<!--                    </LinearLayout>-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/main_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/phone_bwcc"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="_"-->
+<!--                        android:textSize="@dimen/font_lg"-->
+<!--                        android:textColor="@color/colorText"/>-->
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/whatsapp_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_whatsapp"/>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/open_whatsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:padding="4dp"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/whatsapp_bwcc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/font_lg" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:src="@drawable/ic_fax"/>-->
+
+<!--                    <View-->
+<!--                        android:layout_width="10dp"-->
+<!--                        android:layout_height="0dp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Fax : (021)-22681516"-->
+<!--                        android:textSize="@dimen/font_lg"-->
+<!--                        android:textColor="@color/colorText"/>-->
+<!--                </LinearLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mp_half_md"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOCIAL MEDIA"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/font_xlg"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To stay in touch, join online discussions or see the latest news, connect with us in the following places:"
+                    android:textSize="@dimen/font_lg"
+                    android:textColor="@color/colorText"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_facebook"/>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/url_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:padding="4dp"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/facebook_bwcc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/font_lg" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_instagram"/>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/url_instagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:padding="4dp"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/instagram_bwcc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/font_lg" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_youtube"/>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/url_youtube"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:padding="4dp"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/youtube_bwcc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/font_lg" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_twitter"/>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/url_twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_300"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:padding="4dp"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/twitter_bwcc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="_"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/font_lg" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:scrollbars="none"
+    android:scrollingCache="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/grey_20"
+                        android:foreground="@color/overlay_dark_10" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/spacing_mlarge"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingRight="@dimen/spacing_large"
+                        android:paddingTop="@dimen/spacing_mxlarge">
+
+                        <LinearLayout
+                            android:id="@+id/layout_dots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/mp_xs"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_add_patient"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/mp_xs"
+                    android:layout_marginLeft="@dimen/mp_sm"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_patient"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:text="Patients"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/font_lg"
+                            android:textColor="@color/colorText"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_online_register"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/mp_xs"
+                    android:layout_marginLeft="@dimen/mp_xs"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_booking"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:layout_gravity="center"
+                            android:text="Online Booking"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/font_lg" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_history"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/mp_sm"
+                    android:layout_marginLeft="@dimen/mp_xs"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_history" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:text="History"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/font_lg" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_doctor_schedule"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/mp_xs"
+                    android:layout_marginLeft="@dimen/mp_sm"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_doctor"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:text="Doctor Name"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/font_lg"
+                            android:textColor="@color/colorText"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_informasi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mp_xs"
+                    android:layout_marginRight="@dimen/mp_xs"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_information"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:text="Contact Us"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/font_lg"
+                            android:textColor="@color/colorText"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_news"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mp_xs"
+                    android:layout_marginRight="@dimen/mp_sm"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_news"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:text="News"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/font_lg"
+                            android:textColor="@color/colorText"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_education_class"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/mp_xs"
+                    android:layout_marginLeft="@dimen/mp_sm"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_education_class"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:text="Education Class"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/font_lg"
+                            android:textColor="@color/colorText"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_logout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mp_xs"
+                    android:layout_marginRight="@dimen/mp_xs"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_logout"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:text="Sign Out"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/font_lg"
+                            android:textColor="@color/colorText"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mp_xs"
+                    android:layout_marginRight="@dimen/mp_sm"
+                    android:layout_marginBottom="@dimen/mp_xs"
+                    android:layout_marginTop="@dimen/mp_xs"
+                    android:layout_weight="2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="1dp"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_logout"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mp_half_sm"
+                            android:text="Sign Out"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/font_lg"
+                            android:textColor="@color/colorText"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

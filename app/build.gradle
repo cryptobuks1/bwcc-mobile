@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.inovasialfatih.klinikbwcc"
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 16
+        versionName "1.0.16"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "URL_BASE", '"https://bwcc.inovasialfatih.com/api/public/"') /* url production */
+        //buildConfigField("String", "URL_BASE", '"http://bwcc.dev.inovasialfatih.com/api/public/"') /* url development */
+        buildConfigField("String", "X_API_KEY", '""')
+        buildConfigField("String", "OCR_API_KEY", '""')
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:animated-vector-drawable:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v13:27.1.1'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.joanzapata.iconify:android-iconify:2.2.2'
+    implementation 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+    implementation 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    implementation 'com.balysv:material-ripple:1.0.2'
+    implementation 'com.rilixtech:materialfancybuttons:1.8.7'
+    implementation 'com.rilixtech:ionicons-typeface:2.0.1.3'
+    implementation 'com.github.vivchar:RendererRecyclerViewAdapter:2.5.1'
+    implementation 'de.blox.treeview:treeview:0.1.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    implementation 'com.android.support:customtabs:28.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.onurkagan:ktoast:1.0.2'
+    //implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.droidninja:filepicker:2.1.5'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.1'
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+    implementation 'com.rilixtech:materialfancybuttons:1.8.7'
+    implementation('com.mikepenz:materialdrawer:6.0.8@aar') {
+        transitive = true
+    }
+    implementation 'com.wdullaer:materialdatetimepicker:3.2.0'
+    implementation('com.shagi:material-datepicker:1.3') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.akhgupta:android-easylocation:1.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-messaging:18.0.0'
+
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+}
+
+apply plugin: 'com.google.gms.google-services'

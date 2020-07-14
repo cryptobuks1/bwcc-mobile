@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/back_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/mp_xs"
+                android:paddingRight="@dimen/mp_half_md"
+                android:src="@drawable/ic_chevron_left" />
+
+            <ImageView
+                android:id="@+id/search_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/mp_xs"
+                android:paddingRight="@dimen/mp_half_md"
+                android:src="@drawable/ic_arrow_back"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/back_menu"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_xxlg" />
+
+        <EditText
+            android:id="@+id/search_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mp_sm"
+            android:paddingRight="@dimen/mp_sm"
+            android:layout_toRightOf="@id/back_menu"
+            android:hint="Search..."
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/nav_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/mp_sm"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/mp_sm"
+            android:paddingLeft="@dimen/mp_half_md"
+            android:src="@drawable/ic_search"
+            android:layout_gravity="right|center_vertical"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</android.support.v7.widget.Toolbar>

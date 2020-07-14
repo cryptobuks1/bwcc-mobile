@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarSize"
+    android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/mp_xs"
+            android:paddingRight="@dimen/mp_half_md"
+            android:src="@drawable/ic_chevron_left"/>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_xxlg" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="@dimen/mp_sm"-->
+<!--            android:paddingRight="@dimen/mp_sm"-->
+<!--            android:paddingLeft="@dimen/mp_half_md"-->
+<!--            android:src="@drawable/ic_home"-->
+<!--            android:layout_gravity="right|center_vertical"/>-->
+
+</android.support.v7.widget.Toolbar>

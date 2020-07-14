@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+<!--        <item-->
+<!--            android:id="@+id/nav_payment"-->
+<!--            android:icon="@drawable/ic_payment"-->
+<!--            android:title="Payment" />-->
+    </group>
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_location_city"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_rate_app"
+            android:icon="@drawable/ic_star_half"
+            android:title="Rate this app" />
+    </group>
+
+</menu>

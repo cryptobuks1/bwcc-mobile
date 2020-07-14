@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "925125654067",
+    "firebase_url": "https://bwcc-mobileapp.firebaseio.com",
+    "project_id": "bwcc-mobileapp",
+    "storage_bucket": "bwcc-mobileapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925125654067:android:1437bd3d45ab740d0b5546",
+        "android_client_info": {
+          "package_name": "com.inovasialfatih.klinikbwcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925125654067-g56l3tco3au7j8oinr36micvb7boa6ti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBymb9cz0P17qhfEMewBhiyLhN21fugiG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925125654067-g56l3tco3au7j8oinr36micvb7boa6ti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionBarSize">50dp</dimen>
+    <dimen name="actionBarSizeHome">65dp</dimen>
+    <dimen name="footerMenuSize">40dp</dimen>
+    <dimen name="footerIconSize">22dp</dimen>
+
+    <!--Button-->
+    <dimen name="btn_radius">5dp</dimen>
+    <dimen name="btn_border_width">1dp</dimen>
+    <dimen name="btn_text_size">14sp</dimen>
+    <dimen name="btn_icon_size">16sp</dimen>
+
+    <!--General-->
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+
+    <dimen name="mp_xxlg">100dp</dimen>
+    <dimen name="mp_half_xxlg">80dp</dimen>
+    <dimen name="mp_xlgg">70dp</dimen>
+    <dimen name="mp_xlg">60dp</dimen>
+    <dimen name="mp_half_xlg">50dp</dimen>
+    <dimen name="mp_lg">40dp</dimen>
+    <dimen name="mp_half_lg">30dp</dimen>
+    <dimen name="mp_md">20dp</dimen>
+    <dimen name="mp_half_md">15dp</dimen>
+    <dimen name="mp_sm">10dp</dimen>
+    <dimen name="mp_half_sm">7dp</dimen>
+    <dimen name="mp_xs">5dp</dimen>
+    <dimen name="mp_xxs">2dp</dimen>
+
+    <dimen name="font_xsuper">30sp</dimen>
+    <dimen name="font_super">25sp</dimen>
+    <dimen name="font_xxxlg">20sp</dimen>
+    <dimen name="font_xxlg">18sp</dimen>
+    <dimen name="font_xlg">16sp</dimen>
+    <dimen name="font_lg">14sp</dimen>
+    <dimen name="font_md">12sp</dimen>
+    <dimen name="font_sm">10sp</dimen>
+    <dimen name="font_xs">8sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!--genaral spacing-->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_ssmlarge">17dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mxlarge">25dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xmlarge">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

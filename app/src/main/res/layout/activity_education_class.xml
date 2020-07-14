@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activities.EducationClassActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/spacing_ssmlarge"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_select_patient"
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_text_round_bg_white"
+            android:drawableEnd="@drawable/ic_expand_arrow"
+            android:drawableRight="@drawable/ic_expand_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Patient"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:minHeight="45dp"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle"
+            android:singleLine="true"
+            android:textSize="@dimen/font_xlg" />
+
+        <EditText
+            android:id="@+id/et_select_date"
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:background="@drawable/edit_text_round_bg_white"
+            android:drawableEnd="@drawable/ic_expand_arrow"
+            android:drawableRight="@drawable/ic_expand_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Date"
+            android:singleLine="true"
+            android:minHeight="45dp"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:textSize="@dimen/font_xlg"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle" />
+
+        <EditText
+            android:id="@+id/et_select_class"
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:background="@drawable/edit_text_round_bg_white"
+            android:drawableEnd="@drawable/ic_expand_arrow"
+            android:drawableRight="@drawable/ic_expand_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Class"
+            android:singleLine="true"
+            android:minHeight="45dp"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:textSize="@dimen/font_xlg"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle" />
+
+        <EditText
+            android:id="@+id/et_select_instructor"
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:background="@drawable/edit_text_round_bg_white"
+            android:drawableEnd="@drawable/ic_expand_arrow"
+            android:drawableRight="@drawable/ic_expand_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Instructor"
+            android:singleLine="true"
+            android:minHeight="45dp"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:textSize="@dimen/font_xlg"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mp_md"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_rounded"
+            android:text="Register"
+            android:textSize="@dimen/font_lg"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
